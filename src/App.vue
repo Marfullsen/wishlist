@@ -38,6 +38,10 @@
   color: var(--color-primario);
 }
 
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
 button {
   font-family: "Comfortaa", cursive, Avenir, Helvetica, Arial, sans-serif;
 }

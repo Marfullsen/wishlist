@@ -38,8 +38,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.pacifico {
-  font-family: "Pacifico", cursive;
-}
-</style>
+<style scoped></style>
