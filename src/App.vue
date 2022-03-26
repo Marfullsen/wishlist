@@ -1,6 +1,6 @@
 <template>
   <div id="nav">
-    <router-link to="/guest">Guest</router-link> |
+    <router-link to="/guest/AABBCC99">Guest</router-link> |
     <router-link to="/">Home</router-link> |
     <router-link to="/host">Host</router-link> |
     <!-- <router-link to="/about">About</router-link> -->

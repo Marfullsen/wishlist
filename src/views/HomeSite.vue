@@ -7,7 +7,8 @@
     <div class="is-relative">
       <input
         autofocus
-        class="input has-text-centered p-4"
+        class="input has-text-centered p-4 w-auto"
+        :class="wrongCode ? 'is-danger' : ''"
         type="text"
         name="code"
         id="code"
@@ -15,12 +16,15 @@
         maxlength="8"
         autocomplete="off"
         oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"
+        v-model="code"
+        @input="this.verificarCodigo"
       />
       <ion-icon
         class="is-absolute right-1 large-x"
         name="qr-code-outline"
       ></ion-icon>
     </div>
+    <p v-show="wrongCode" class="help is-danger">El código es inválido</p>
     <section class="block">
       <p class="is-size-2 color-secundario">Listados</p>
       <button
@@ -41,10 +45,35 @@
 export default {
   name: "HomeSite",
   components: {},
+  data() {
+    return {
+      wrongCode: false,
+      code: "",
+    };
+  },
+  methods: {
+    verificarCodigo() {
+      if (this.code.length == 8) {
+        // llamada al servidor para corroborar existencia.
+        this.$router.push(`/guest/${this.code}`);
+      } else {
+        this.wrongCode == false;
+      }
+    },
+  },
+  computed: {
+    title() {
+      return this.brand + " " + this.product;
+    },
+  },
 };
 </script>
 
 <style scoped>
+.w-auto {
+  width: auto;
+}
+
 .is-absolute {
   position: absolute;
 }
