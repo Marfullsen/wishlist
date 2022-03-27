@@ -15,7 +15,6 @@
         placeholder="ANABEN21"
         maxlength="8"
         autocomplete="off"
-        oninput="let p=this.selectionStart;this.value=this.value.toUpperCase();this.setSelectionRange(p, p);"
         v-model="code"
         @input="this.verificarCodigo"
       />
@@ -53,17 +52,22 @@ export default {
   },
   methods: {
     verificarCodigo() {
+      this.code = this.code.toUpperCase();
       if (this.code.length == 8) {
         // llamada al servidor para corroborar existencia.
-        this.$router.push(`/guest/${this.code}`);
+        if (this.code == "ANABEN21") {
+          this.$router.push(`/guest/${this.code}`);
+        } else {
+          this.wrongCode = true;
+        }
       } else {
-        this.wrongCode == false;
+        this.wrongCode = false;
       }
     },
   },
   computed: {
-    title() {
-      return this.brand + " " + this.product;
+    upperCode() {
+      return this.code.toUpperCase();
     },
   },
 };
