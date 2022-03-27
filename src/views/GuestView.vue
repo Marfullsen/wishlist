@@ -4,11 +4,14 @@
     <p class="is-size-4 color-auxiliar">Deseos de Ana y Benja</p>
 
     <section class="block">
-      <figure class="is-flex is-justify-content-center is-align-content-center">
+      <figure
+        class="is-flex is-justify-content-center is-align-content-center mb-neg-23"
+      >
         <div class="numberCircle fondo-primario color-auxiliar">1</div>
       </figure>
       <article class="message">
         <div class="message-body">
+          <p class="is-size-2 color-secundario">Tetera</p>
           Una tetera roja para tomar tesito en familia
           <p class="color-secundario">
             Regalar
@@ -64,7 +67,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.mb-neg-23 {
+  margin-bottom: -23px;
+}
+
 .numberCircle {
   font: 32px "sunlain", Arial, sans-serif;
 
