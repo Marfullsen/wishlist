@@ -65,11 +65,6 @@ export default {
       }
     },
   },
-  computed: {
-    upperCode() {
-      return this.code.toUpperCase();
-    },
-  },
 };
 </script>
 
