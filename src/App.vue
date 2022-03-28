@@ -62,6 +62,11 @@ button {
   color: var(--color-fondo);
 }
 
+.fondo,
+.fondo-fondo {
+  background-color: var(--color-fondo);
+}
+
 .fondo-primario {
   background-color: var(--color-fondo-primario);
 }
