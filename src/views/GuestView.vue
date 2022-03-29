@@ -9,52 +9,78 @@
       >
         <div class="numberCircle fondo-primario color-auxiliar">1</div>
       </figure>
-      <article class="message">
-        <div class="message-body">
-          <p class="is-size-2 color-secundario">Tetera</p>
-          Una tetera roja para tomar tesito en familia
-          <p class="color-secundario">
+      <article class="message fondo-primario-translucido br-tl-br-rounded mx-5">
+        <div class="message-body no-border">
+          <p class="block is-size-2 color-secundario">Tetera</p>
+          <figure class="block image m-auto is-96x96">
+            <img
+              src="https://images.unsplash.com/photo-1594213114663-d94db9b17125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&q=96"
+            />
+          </figure>
+          <p class="block">Una tetera roja para tomar tesito en familia</p>
+          <button
+            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            @click="$event.target.classList.toggle('is-loading')"
+          >
             Regalar
             <ion-icon name="gift-outline"></ion-icon>
-          </p>
+          </button>
         </div>
       </article>
     </section>
 
-    <section
-      class="block is-flex is-justify-content-center is-align-content-center"
-    >
-      <figure>
+    <section class="block">
+      <figure
+        class="is-flex is-justify-content-center is-align-content-center mb-neg-23"
+      >
         <div class="numberCircle fondo-secundario color-auxiliar">2</div>
       </figure>
-      <article class="message is-dark">
-        <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
-          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
-          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
-          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.
+      <article
+        class="message fondo-secundario-translucido br-tl-br-rounded mx-5"
+      >
+        <div class="message-body no-border">
+          <p class="is-size-2 color-secundario">Muspi Merol</p>
+          <figure class="block image m-auto is-96x96">
+            <img
+              src="https://images.unsplash.com/photo-1573866926487-a1865558a9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=90&q=80"
+            />
+          </figure>
+          <p class="block">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button
+            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            @click="$event.target.classList.toggle('is-loading')"
+          >
+            Regalar
+            <ion-icon name="gift-outline"></ion-icon>
+          </button>
         </div>
       </article>
     </section>
 
-    <section
-      class="block is-flex is-justify-content-center is-align-content-center"
-    >
-      <div class="numberCircle fondo-auxiliar color-primario">3</div>
-      <article class="message is-info">
-        <div class="message-body">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          <strong>Pellentesque risus mi</strong>, tempus quis placerat ut, porta
-          nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida
-          purus diam, et dictum <a>felis venenatis</a> efficitur. Aenean ac
-          <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-          sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi
-          magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales
-          sem.
+    <section class="block">
+      <figure
+        class="is-flex is-justify-content-center is-align-content-center mb-neg-23"
+      >
+        <div class="numberCircle fondo-auxiliar color-primario">3</div>
+      </figure>
+      <article class="message fondo-auxiliar-translucido br-tl-br-rounded mx-5">
+        <div class="message-body no-border">
+          <p class="is-size-2 color-secundario">Pellentesque</p>
+          <figure class="block image m-auto is-96x96">
+            <img
+              src="https://images.unsplash.com/photo-1580130281320-0ef0754f2bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=80&q=80"
+            />
+          </figure>
+          <p class="block">Pellentesque risus mi</p>
+          <button
+            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            @click="$event.target.classList.toggle('is-loading')"
+          >
+            Regalar
+            <ion-icon name="gift-outline"></ion-icon>
+          </button>
         </div>
       </article>
     </section>
@@ -68,6 +94,42 @@ export default {
 </script>
 
 <style scoped>
+.fondo-primario-translucido {
+  background-color: #feb06a15;
+}
+
+.fondo-secundario-translucido {
+  background-color: #36d6e715;
+}
+
+.fondo-auxiliar-translucido {
+  background-color: #5d6c8915;
+}
+
+.btn-orange-hover.is-focused:not(:active),
+.btn-orange-hover:focus:not(:active) {
+  box-shadow: 0 0 0 0;
+}
+
+.btn-orange-hover:hover {
+  border-color: var(--color-fondo-primario);
+  border-style: solid;
+  border-radius: 0px 15px;
+  color: var(--color-primario);
+}
+
+.has-background-transparent {
+  background-color: transparent;
+}
+
+.no-border {
+  border-style: none;
+}
+
+.br-tl-br-rounded {
+  border-radius: 100px 0px;
+}
+
 .mb-neg-23 {
   margin-bottom: -23px;
 }
