@@ -4,7 +4,7 @@
     <div class="modal-card">
       <header class="modal-card-head has-background-danger">
         <p class="modal-card-title has-text-white">
-          <ion-icon name="trash-outline"></ion-icon>
+          <ion-icon name="trash-outline" v-pre></ion-icon>
           Finalizar Evento
         </p>
         <button

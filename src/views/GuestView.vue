@@ -12,18 +12,22 @@
       <article class="message fondo-primario-translucido br-tl-br-rounded mx-5">
         <div class="message-body no-border">
           <p class="block is-size-2 color-secundario">Tetera</p>
-          <figure class="block image m-auto is-96x96">
-            <img
-              src="https://images.unsplash.com/photo-1594213114663-d94db9b17125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&q=96"
-            />
-          </figure>
-          <p class="block">Una tetera roja para tomar tesito en familia</p>
+          <div class="block">
+            <figure class="image m-auto is-96x96">
+              <img
+                src="https://images.unsplash.com/photo-1594213114663-d94db9b17125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&q=96"
+              />
+            </figure>
+          </div>
+          <p class="mb-5 descripcion fondo-primario">
+            Una tetera roja para tomar tesito en familia
+          </p>
           <button
-            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            class="mb-4 is-size-5 button has-background-transparent color-secundario no-border btn-orange-hover"
             @click="$event.target.classList.toggle('is-loading')"
           >
             Regalar
-            <ion-icon name="gift-outline"></ion-icon>
+            <ion-icon name="gift-outline" v-pre></ion-icon>
           </button>
         </div>
       </article>
@@ -45,15 +49,15 @@
               src="https://images.unsplash.com/photo-1573866926487-a1865558a9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=90&q=80"
             />
           </figure>
-          <p class="block">
+          <p class="block descripcion fondo-secundario">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <button
-            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            class="block is-size-5 button has-background-transparent color-secundario no-border btn-orange-hover"
             @click="$event.target.classList.toggle('is-loading')"
           >
             Regalar
-            <ion-icon name="gift-outline"></ion-icon>
+            <ion-icon name="gift-outline" v-pre></ion-icon>
           </button>
         </div>
       </article>
@@ -73,13 +77,15 @@
               src="https://images.unsplash.com/photo-1580130281320-0ef0754f2bf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=80&q=80"
             />
           </figure>
-          <p class="block">Pellentesque risus mi</p>
+          <p class="block descripcion fondo-auxiliar color-fondo">
+            Pellentesque risus mi
+          </p>
           <button
-            class="block button has-background-transparent color-secundario no-border btn-orange-hover"
+            class="block is-size-5 button has-background-transparent color-secundario no-border btn-orange-hover"
             @click="$event.target.classList.toggle('is-loading')"
           >
             Regalar
-            <ion-icon name="gift-outline"></ion-icon>
+            <ion-icon name="gift-outline" v-pre></ion-icon>
           </button>
         </div>
       </article>
@@ -94,6 +100,12 @@ export default {
 </script>
 
 <style scoped>
+.descripcion {
+  padding: 20px;
+  /* background-color: #00000009; */
+  border-radius: 50px 0px;
+}
+
 .fondo-primario-translucido {
   background-color: #feb06a15;
 }
@@ -128,6 +140,7 @@ export default {
 
 .br-tl-br-rounded {
   border-radius: 100px 0px;
+  border: solid 0.2em var(--color-fondo-auxiliar);
 }
 
 .mb-neg-23 {

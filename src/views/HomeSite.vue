@@ -21,6 +21,7 @@
       <ion-icon
         class="is-absolute right-1 large-x"
         name="qr-code-outline"
+        v-pre
       ></ion-icon>
     </div>
     <p v-show="wrongCode" class="help is-danger">El código es inválido</p>
@@ -28,11 +29,13 @@
       <p class="is-size-2 color-secundario">Listados</p>
       <button
         class="color-auxiliar fondo-primario button is-rounded is-fullwidth my-3"
+        @click="this.$router.push(`/host/${this.code}`)"
       >
         Crear listado
       </button>
       <button
         class="color-fondo fondo-auxiliar button is-rounded is-fullwidth mt-2"
+        @click="this.$router.push(`/host/${this.code}`)"
       >
         Ver listado
       </button>

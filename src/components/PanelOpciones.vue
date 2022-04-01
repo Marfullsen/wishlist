@@ -1,9 +1,9 @@
 <template>
   <nav class="panel mx-5">
     <p class="panel-heading color-auxiliar fondo-primario">
-      <ion-icon name="gift"></ion-icon>
+      <ion-icon name="gift" v-pre></ion-icon>
       Listado de Regalos
-      <ion-icon name="gift"></ion-icon>
+      <ion-icon name="gift" v-pre></ion-icon>
     </p>
     <div class="is-hidden-touch">
       <p class="panel-tabs">
@@ -60,7 +60,7 @@
       >
         <span>Finalizar evento</span>
         <span class="icon">
-          <ion-icon name="trash-outline"></ion-icon>
+          <ion-icon name="trash-outline" v-pre></ion-icon>
         </span>
       </button>
       <modal-delete @close-modal="closeModal" :isActive="activeModal" />

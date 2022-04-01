@@ -2,7 +2,7 @@
   <div>
     <p class="pacifico is-size-1">Wishlist</p>
     <p class="is-size-4 color-auxiliar">Matrimonio 23 de Enero</p>
-    <ion-icon class="is-size-20" name="qr-code-outline"></ion-icon>
+    <ion-icon class="is-size-20" name="qr-code-outline" v-pre></ion-icon>
     <section class="block">
       <p class="is-size-4 color-auxiliar has-text-weight-bold">
         Deseos de Ana y Benja
