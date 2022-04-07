@@ -4,7 +4,7 @@
     <p class="is-size-4 color-auxiliar">Matrimonio 23 de Enero</p>
     <ion-icon class="is-size-20" name="qr-code-outline" v-pre></ion-icon>
     <section class="block">
-      <p class="is-size-4 color-auxiliar has-text-weight-bold">
+      <p class="is-size-3 color-secundario has-text-weight-bold">
         Deseos de Ana y Benja
       </p>
       <p class="is-size-4 color-auxiliar">Fecha: {{ this.fecha_evento }}</p>

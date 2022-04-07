@@ -13,7 +13,7 @@
         <div class="message-body no-border">
           <p class="block is-size-2 color-secundario">Tetera</p>
           <div class="block">
-            <figure class="image m-auto is-96x96">
+            <figure class="image m-auto is-128x128">
               <img
                 src="https://images.unsplash.com/photo-1594213114663-d94db9b17125?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=96&q=96"
               />
@@ -43,17 +43,19 @@
         class="message fondo-secundario-translucido br-tl-br-rounded mx-5"
       >
         <div class="message-body no-border">
-          <p class="is-size-2 color-secundario">Muspi Merol</p>
-          <figure class="block image m-auto is-96x96">
-            <img
-              src="https://images.unsplash.com/photo-1573866926487-a1865558a9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=90&q=80"
-            />
-          </figure>
+          <p class="block is-size-2 color-secundario">Muspi Merol</p>
+          <div class="block">
+            <figure class="image m-auto is-96x96">
+              <img
+                src="https://images.unsplash.com/photo-1573866926487-a1865558a9cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=90&q=80"
+              />
+            </figure>
+          </div>
           <p class="block descripcion fondo-secundario">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
           <button
-            class="block is-size-5 button has-background-transparent color-secundario no-border btn-orange-hover"
+            class="mb-4 is-size-5 button has-background-transparent color-secundario no-border btn-orange-hover"
             @click="$event.target.classList.toggle('is-loading')"
           >
             Regalar
@@ -102,7 +104,6 @@ export default {
 <style scoped>
 .descripcion {
   padding: 20px;
-  /* background-color: #00000009; */
   border-radius: 50px 0px;
 }
 
