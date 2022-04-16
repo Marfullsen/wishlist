@@ -21,11 +21,11 @@
 </p>
 
 ## ⚠️ Sólo diseño FrontEnd ⚠️
-**Atención:** Este proyecto es un **diseño visual** (Fachada) orientado a dispositivos móviles, visualizable [aquí](https://marfullsen.github.io/wishlist/).
+**Atención:** Este proyecto es un **diseño visual** (una fachada) orientado a dispositivos móviles, visualizable [aquí](https://marfullsen.github.io/wishlist/).
 
 ## ¿Qué es _Wishlist_?
 
-Wishlist es un listado interactivo que ayuda a los invitados de un evento para hacer más amigable la elección de regalos y evitar que se repitan.
+¿Cuántas veces te han llegado los mismos regalos de varios invitados? ¿No sería mejor si les envías un listado interactivo que gestione todos esos problemas? Wishlist es todo eso y más, listados virtuales que evitarán que recibas demasiadas teteras, demasiados tostadores u otros como regalo en cualquier evento.
 
 ## Paleta de colores
 
@@ -61,17 +61,26 @@ Wishlist es un listado interactivo que ayuda a los invitados de un evento para h
 }
 ```
 
-## Project setup
+## Vista previa del sitio
+
+<p align="center">
+  <a href="https://marfullsen.github.io/wishlist/" rel="noopener">
+  <img src="./docs/img/vista_previa.png" alt="Vista Previa"></a>
+</p>
+
+## Instalación del proyecto
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compilación y recarga rápida para desarrollo.
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compilación y minificado para producción.
 ```
 npm run build
 ```
+## Referencias
+- [Vista Previa del sitio](https://previewed.app/)
