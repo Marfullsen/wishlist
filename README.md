@@ -84,3 +84,6 @@ npm run build
 ```
 ## Referencias
 - [Vista Previa del sitio](https://previewed.app/)
+- [5 online mockup generator tools for UX/UI designers](https://bootcamp.uxdesign.cc/5-online-mockup-generator-tools-for-ux-ui-designers-e7b51813168e)
+- [App Designs](https://bashooka.com/inspiration/to-do-list-app-ui-designs/)
+- [Paletas de colores](https://mybrandnewlogo.com/es/generador-de-paleta-de-colores)
