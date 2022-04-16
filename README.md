@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://marfullsen.github.io/wishlist/" rel="noopener">
- <img src="./docs/img/mockup.png" alt="mockup"></a>
+  <img src="./docs/img/vista_previa.png" alt="Vista Previa"></a>
 </p>
 
 <p align="center">
@@ -61,11 +61,11 @@
 }
 ```
 
-## Vista previa del sitio
+## Mockup
 
 <p align="center">
   <a href="https://marfullsen.github.io/wishlist/" rel="noopener">
-  <img src="./docs/img/vista_previa.png" alt="Vista Previa"></a>
+ <img src="./docs/img/mockup.png" alt="mockup"></a>
 </p>
 
 ## Instalación del proyecto
