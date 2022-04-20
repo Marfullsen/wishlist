@@ -68,6 +68,8 @@
  <img src="./docs/img/mockup.png" alt="mockup"></a>
 </p>
 
+El mockup se realizó con [diagrams.net](https://app.diagrams.net/), el archivo se puede descargar [aquí](./docs/sketch/wishlist-diagrams-net.drawio)
+
 ## Instalación del proyecto
 ```
 npm install
