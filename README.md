@@ -36,6 +36,8 @@
 
 ### Código para CSS
 
+Si te gustó la paleta, puedes usar los mismos colores importando el siguiente código a tu hoja de estilos:
+
 ```CSS
 :root {
   --color-fondo: #fbf6f3;
